@@ -1,82 +1,100 @@
 '''
-Python OOP Notes
-🔹 Python Classes/Objects
-Python is an object-oriented programming language.
-Almost everything in Python is an object, with its properties and methods.
-
-A Class is like an object constructor, or a "blueprint" for creating objects.
-🔹 Create a Class
-To create a class, use the keyword class:
+Python OOPS
+🔹 1. Python Classes & Objects
+Python is an object-oriented language.
+Almost everything is an object (with properties + methods).
+A class is a blueprint for creating objects.
+Example:
 class MyClass:
-  x = 5
-  
-🔹 Create Object
-Now we can use the class named MyClass to create objects:
+    x = 5
+    
+Create Object:
 p1 = MyClass()
 print(p1.x)
+Object = instance of class
 
-🔹 The init() Function
-All classes have a function called __init__(), which is always executed when the class is being initiated.
-Use it to assign values to object properties.
+🔹 2. init() Method (Constructor)
+Every class has a built-in method called __init__().
+It runs automatically when an object is created.
+Used to assign values (properties) to objects
+Example:
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-p1 = Person("John", 36)
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+p1 = Person("John", 25)
 print(p1.name)
 print(p1.age)
+Without __init__(), you must assign values manually
 
-🔹 The str() Function
-Controls what should be returned when the class object is represented as a string.
+🔹 3. self Parameter
+self refers to the current object (instance).
+Used to access variables and methods inside class
+Must be the first parameter in methods
+Example:
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-  def __str__(self):
-    return f"{self.name}({self.age})"
-p1 = Person("John", 36)
-print(p1)
+    def __init__(self, name):
+        self.name = name
+    def show(self):
+        print(self.name)
+self.name means: value belongs to that object
 
-🔹 Object Methods
-Objects can also contain methods.
-Methods in objects are functions that belong to the object.
+Important:
+Name doesn’t have to be self, but we always use it (convention)
+
+🔹 4. Properties (Variables in Class)
+Instance Properties
+Defined inside __init__()
+Belong to each object separately
+self.name = name
+
+ Class Properties
+Defined outside methods
+Shared by all objects
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-  def myfunc(self):
-    print("Hello my name is " + self.name)
-p1 = Person("John", 36)
-p1.myfunc()
+    species = "Human"   # class property
+Example:
+class Person:
+    species = "Human"
+    def __init__(self, name):
+        self.name = name
+name → different for each object
+species → same for all
 
-🔹 The self Parameter
-self is a reference to the current instance of the class.
-It is used to access variables that belong to the class.
-It does not have to be named self, but it has to be the first parameter.
-
-🔹 Modify Object Properties
-You can modify properties on objects like this:
+🔹 5. Modify & Delete Properties
+Modify:
 p1.age = 40
-
-🔹 Delete Object Properties
-You can delete properties on objects:
+Delete:
 del p1.age
 
-🔹 Delete Objects
-You can delete objects:
-del p1
-
-🔹 The pass Statement
-class definitions cannot be empty.
-If you have a class definition with no content, use pass.
+6. Methods (Functions in Class)
+Methods are functions inside a class
+They define object behavior
+Example:
 class Person:
-  pass
-  
-Final Summary
-Class → Blueprint for objects
-Object → Instance of class
-init() → Constructor
-self → Reference to current object
-Methods → Functions inside class
-Properties → Variables inside class
+    def __init__(self, name):
+        self.name = name
+    def greet(self):
+        print("Hello " + self.name)
+        
+🔹 7. Methods with Parameters
+class Calculator:
+    def add(self, a, b):
+        return a + b
+        
+🔹 8. Methods Accessing Properties
+def get_info(self):
+    return f"{self.name} is {self.age} years old"
+    
+🔹 9. Methods Modifying Properties
+def birthday(self):
+    self.age += 1
+    
+Summary
+Class → Blueprint
+Object → Instance
+__init__() → runs when object is created
+self → refers to current object
+Properties → variables (data)
+Methods → functions (behavior)
 '''
