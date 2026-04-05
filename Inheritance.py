@@ -8,29 +8,8 @@ Terms:
 Parent Class (Base Class) → Original class
 Child Class (Derived Class) → Class that inherits
 
-Creating a Parent Class
-class Person:
-    def __init__(self, fname, lname):
-        self.firstname = fname
-        self.lastname = lname
 
-    def printname(self):
-        print(self.firstname, self.lastname)
-x = Person("John", "Doe")
-x.printname()
 
- Output:
-John Doe
-
-🔹 Creating a Child Class
- Syntax:
-class ChildClass(ParentClass):
-    pass
-Example:
-class Student(Person):
-    pass
-x = Student("Mike", "Olsen")
-x.printname()
  Child class automatically gets all methods & properties of parent
 
 🔹 Adding __init__() in Child Class
@@ -95,6 +74,15 @@ class Person:
     def printname(self):
         print(self.firstname, self.lastname)
 x = Person("John", "Doe")
+x.printname()
+
+# Creating a Child Class
+class ChildClass(ParentClass):
+    pass
+Example:
+class Student(Person):
+    pass
+x = Student("Mike", "Olsen")
 x.printname()
 
 
