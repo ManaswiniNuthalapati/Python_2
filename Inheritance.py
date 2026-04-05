@@ -8,7 +8,7 @@ Terms:
 Parent Class (Base Class) → Original class
 Child Class (Derived Class) → Class that inherits
 
-🔹 Creating a Parent Class
+Creating a Parent Class
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
@@ -85,6 +85,18 @@ Child: Car, Bike
 All vehicles have speed, engine
 Car adds doors, Bike adds helmet rule
 '''
+
+# Creating a Parent Class
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+
+    def printname(self):
+        print(self.firstname, self.lastname)
+x = Person("John", "Doe")
+x.printname()
+
 
 '''
 Create a class Vehicle with method start()
