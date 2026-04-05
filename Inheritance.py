@@ -8,8 +8,6 @@ Terms:
 Parent Class (Base Class) → Original class
 Child Class (Derived Class) → Class that inherits
 
-
-
  Child class automatically gets all methods & properties of parent
 
 🔹 Adding __init__() in Child Class
@@ -77,9 +75,6 @@ x = Person("John", "Doe")
 x.printname()
 
 # Creating a Child Class
-class ChildClass(ParentClass):
-    pass
-Example:
 class Student(Person):
     pass
 x = Student("Mike", "Olsen")
