@@ -85,3 +85,16 @@ Child: Car, Bike
 All vehicles have speed, engine
 Car adds doors, Bike adds helmet rule
 '''
+
+#parent class- Employee-method, child class developer-method- create obj for developer class 
+#with the help of it access the parent class method
+class Employee:
+    def employee_method(self):
+        print("This is Employee (Parent) class method")
+
+class Developer(Employee):
+    def developer_method(self):
+        print("This is Developer (Child) class method")
+        Employee.employee_method(self)
+d = Developer()
+d.developer_method()
