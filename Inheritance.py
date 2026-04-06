@@ -86,6 +86,20 @@ All vehicles have speed, engine
 Car adds doors, Bike adds helmet rule
 '''
 
+'''
+Create a class Vehicle with method start()
+Create Bike class and call that method
+'''
+class Vehicle:
+    def start(self):
+        print("Vehicle is starting")
+
+class Bike(Vehicle):
+    pass
+b = Bike()
+b.start()
+
+
 #parent class- Employee-method, child class developer-method- create obj for developer class 
 #with the help of it access the parent class method
 class Employee:
@@ -115,3 +129,4 @@ class Student(Person):
 s1 = Student("Sai", 90)
 print(s1.name)
 print(s1.marks)
+
