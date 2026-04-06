@@ -97,3 +97,21 @@ class Developer(Employee):
         Employee.employee_method(self)
 d = Developer()
 d.developer_method()
+
+'''
+Create a class Person with name.
+Create a class Student with marks.
+Print both.
+'''
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Student(Person):
+    def __init__(self, name, marks):
+        super().__init__(name)
+        self.marks = marks
+        
+s1 = Student("Sai", 90)
+print(s1.name)
+print(s1.marks)
