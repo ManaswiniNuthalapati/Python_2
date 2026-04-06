@@ -41,7 +41,7 @@ class Student(Person):
     def __init__(self, fname, lname):
         Person.__init__(self, fname, lname)
         
-🔹 Using super() (Important ⭐)
+🔹 Using super()
 Better way instead of calling parent manually:
 class Student(Person):
     def __init__(self, fname, lname):
@@ -61,7 +61,7 @@ class Student(Person):
     def welcome(self):
         print("Welcome", self.firstname, self.lastname)
         
-🔹 Method Overriding (Very Important ⭐)
+🔹 Method Overriding 
 Child can change parent method behavior
 class Student(Person):
     def printname(self):
@@ -91,7 +91,6 @@ Car adds doors, Bike adds helmet rule
 class Employee:
     def employee_method(self):
         print("This is Employee (Parent) class method")
-
 class Developer(Employee):
     def developer_method(self):
         print("This is Developer (Child) class method")
