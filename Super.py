@@ -1,7 +1,16 @@
 '''
+The super() keyword in Python is used to call methods from a parent (super) class inside a child (subclass).
+🔹 Why use super()?
+To reuse parent class code
+To avoid rewriting methods
+To support inheritance properly
+
+'''
+
+
 #initialise a parent class as Employee-constructor with parameter name, 
 # child class as Developer - constructor with parameter prog_lang, user super()
-'''
+
 class Employee:
     def __init__(self, name):
         self.name = name
