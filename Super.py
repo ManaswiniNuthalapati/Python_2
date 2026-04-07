@@ -13,3 +13,19 @@ class Developer(Employee):
 dev1 = Developer("Vinaya", "Python")
 print("Name:", dev1.name)
 print("Programming Language:", dev1.prog_lang)
+
+ # make a class animal - contain a method with print("animal is shouting"), 
+# make 2 child classes #dog - method with print "bow"& cat - method with print "meow"
+class Animal:
+    def sound(self):
+        print("Animal is shouting")
+class Dog(Animal):
+    def sound(self):
+        print("Bow")
+class Cat(Animal):
+    def sound(self):
+        print("Meow")
+d = Dog()
+c = Cat()
+d.sound()
+c.sound()
