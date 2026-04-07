@@ -146,5 +146,26 @@ s=Shape()
 c=Circle()
 s.draw()
 c.draw()
-    
-    
+
+'''
+Create abstract class Employee with method salary()
+Implement for:
+FullTimeEmployee
+PartTimeEmployee
+'''
+from abc import ABC, abstractmethod
+class Employee(ABC):
+
+    @abstractmethod
+    def salary(self):
+        pass
+class FullTimeEmployee(Employee):
+    def salary(self):
+        return 50000
+class PartTimeEmployee(Employee):
+    def salary(self):
+        return 20000
+e1 = FullTimeEmployee()
+e2 = PartTimeEmployee()
+print(e1.salary())
+print(e2.salary())
