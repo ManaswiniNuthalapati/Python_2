@@ -169,3 +169,4 @@ e1 = FullTimeEmployee()
 e2 = PartTimeEmployee()
 print(e1.salary())
 print(e2.salary())
+
