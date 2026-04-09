@@ -126,3 +126,13 @@ c = Cat()
 a.sound()
 d.sound()
 c.sound()
+
+# Create different classes (Car, Bike) with same method move().
+class Car:
+    def move(self):
+        print("Car is moving")
+class Bike:
+    def move(self):
+        print("Bike is moving")
+for vehicle in (Car(), Bike()):
+    vehicle.move()
