@@ -170,3 +170,7 @@ e2 = PartTimeEmployee()
 print(e1.salary())
 print(e2.salary())
 
+'''
+Create abstract class Animal with method sound().
+Implement Dog and Cat.
+'''
