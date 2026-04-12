@@ -43,15 +43,15 @@ a = Animal() ❌ Error
 ✔ Helps in defining rules for subclasses
 
 🔹 Real-Life Analogy
-👉 Think of ATM machine
+Think of ATM machine
 You see options like:
 Withdraw
 Deposit
 But internal banking process is hidden
 
-➡️ That is abstraction
+That is abstraction
 
-🔹 Short Summary 
+Short Summary 
 Abstraction = Hide details, show essentials
 Achieved using ABC module
 Uses @abstractmethod
@@ -59,7 +59,7 @@ Cannot create object of abstract class
 Child class must implement abstract methods
 '''
 '''
-Problem 3: Create an Abstract Class
+Problem: Create an Abstract Class
 Create an abstract class Shape with:
 * abstract method area()
 * abstract method perimeter()
