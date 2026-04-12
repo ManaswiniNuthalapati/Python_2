@@ -7,30 +7,30 @@ When you use a mobile phone, you don’t know how it works internally.
 You just use features like calling, apps, etc.
 That’s abstraction.
 
-🔹 Why do we use Abstraction?
+Why do we use Abstraction?
 Reduces complexity
 Improves code readability
 Increases security (hides data)
 Makes code reusable
 
-🔹 How to Achieve Abstraction in Python?
+How to Achieve Abstraction in Python?
 Python uses:
 Abstract Classes
 Abstract Methods
 
 Using module  abc (Abstract Base Class)
-🔹 Abstract Class
+Abstract Class
 A class that:
 Cannot be instantiated (cannot create object)
 Contains abstract methods
 
-🔹 Abstract Method
+Abstract Method
 A method:
 Declared but not implemented
 Must be implemented in child class
 
-🔹 Syntax
-from abc import ABC, abstractmetho
+Syntax
+from abc import ABC, abstractmethod
 class Parent(ABC):   # Abstract class
     @abstractmethod
     def show(self):  # Abstract method
@@ -189,3 +189,4 @@ a1 = Dog()
 a2 = Cat()
 print(a1.sound())
 print(a2.sound())
+
