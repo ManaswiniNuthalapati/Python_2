@@ -103,7 +103,7 @@ print("Rectangle Area:", r.area())
 print("Rectangle Perimeter:", r.perimeter())
 
 '''
-Problem 4: Payment System
+Problem: Payment System
 Design an abstract class Payment:
 * method: pay(amount)
 Implement:
@@ -116,7 +116,6 @@ class payment(ABC):
     @abstractmethod
     def pay(self,amount):
         pass
-    
 class CreditCardPayment(payment):
     def pay(self,amount):
         print(f"Paid {amount} using Credit Card")
@@ -126,6 +125,7 @@ class UPIPayment(payment):
 class NetBankingPayment(payment):
     def pay(self,amount):
         print(f"Paid {amount} using Net Banking")
+        
 p1=CreditCardPayment()
 p1.pay(1000)
 p2=UPIPayment()
