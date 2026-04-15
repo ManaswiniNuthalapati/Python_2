@@ -133,10 +133,8 @@ p2.pay(500)
 p3=NetBankingPayment()
 p3.pay(100)
 
-
 # take a class shape as parent class define draw method in it,  child class as circle
 #as usual draw method should be in child class also then implement it as method overriding
-
 class Shape:
     def draw(self):
         print("Draw")
