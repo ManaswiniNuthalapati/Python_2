@@ -36,13 +36,13 @@ class Parent(ABC):   # Abstract class
     def show(self):  # Abstract method
         pass
         
-🔹 Key Points
+Key Points
 ✔ Cannot create object of abstract class
 a = Animal() ❌ Error
 ✔ Child class must implement all abstract methods
 ✔ Helps in defining rules for subclasses
 
-🔹 Real-Life Analogy
+Real-Life Analogy
 Think of ATM machine
 You see options like:
 Withdraw
