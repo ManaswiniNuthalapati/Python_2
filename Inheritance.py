@@ -8,17 +8,17 @@ Terms:
 Parent Class (Base Class) → Original class
 Child Class (Derived Class) → Class that inherits
 
- Child class automatically gets all methods & properties of parent
+Child class automatically gets all methods & properties of parent
 
-🔹 Adding __init__() in Child Class
+ Adding __init__() in Child Class
 If you add __init__() in child:
- It overrides parent’s constructor
+It overrides parent’s constructor
 
 class Student(Person):
     def __init__(self, fname, lname):
         Person.__init__(self, fname, lname)
         
-🔹 Using super()
+ Using super()
 Better way instead of calling parent manually:
 class Student(Person):
     def __init__(self, fname, lname):
@@ -27,23 +27,23 @@ class Student(Person):
  super() automatically calls parent class
  Cleaner and recommended way
 
-🔹 Adding New Properties
+ Adding New Properties
 class Student(Person):
     def __init__(self, fname, lname, year):
         super().__init__(fname, lname)
         self.year = year
         
-🔹 Adding New Methods
+ Adding New Methods
 class Student(Person):
     def welcome(self):
         print("Welcome", self.firstname, self.lastname)
         
-🔹 Method Overriding 
+ Method Overriding 
 Child can change parent method behavior
 class Student(Person):
     def printname(self):
         print("Student:", self.firstname, self.lastname)
-👉 Child method will run instead of parent
+ Child method will run instead of parent
 
 🔹 Key Points to Remember
 
