@@ -110,6 +110,7 @@ class B(A):
 class C(A):
     pass
     
+    
 2. Encapsulation
 Wrapping data + methods together
  Example:
@@ -125,6 +126,7 @@ class Student:
 Access using method:
 def get_marks(self):
     return self.__marks
+ 
     
 3. Polymorphism
 Same method name → different behavior
@@ -141,6 +143,7 @@ d.sound()
 c.sound()
 Same method sound() but different outputs
 
+
 4. Abstraction
 Hide unnecessary details, show only important parts
 Example:
@@ -153,6 +156,8 @@ class Car:
 c = Car()
 c.start()
  Internal engine logic is hidden → abstraction
+
+
 
  Final Summary 
 Concept	            Meaning
