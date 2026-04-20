@@ -35,3 +35,42 @@ class Employee:
         print("Salary:",self.salary)
 e1=Employee("Manaswini",50000)
 e1.show_details()
+
+'''
+Question 3 — Encapsulation
+Create class Bank
+Private variable:
+balance
+Methods:
+deposit()
+withdraw()
+show_balance()
+'''
+class Bank:
+    def __init__(self,balance):
+        self._balance=balance
+        
+'''
+Question 4 — Inheritance
+Create Parent Class:
+Vehicle
+Method:
+start()
+Create Child Class:
+Car
+Method:
+drive()
+Create an object and call both methods.
+'''
+class Vehicle:
+    def start(self):
+        print("Vehicle is starting")
+class Car(Vehicle):
+    def drive(self):
+        print("Vehicle is driving")
+c1=Car()
+c1.start()
+c1.drive()
+
+    
+    
