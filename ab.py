@@ -72,5 +72,31 @@ c1=Car()
 c1.start()
 c1.drive()
 
+'''
+Question 5 — Polymorphism
+Create class:
+Animal
+Method:
+sound()
+Create child classes:
+Dog
+Cat
+Override sound() method.
+'''
+class Animal:
+    def sound(self):
+        print("Animal sounds")
+class Dog:
+    def sound(self):
+        print("Dog barks")
+class Cat:
+    def sound(self):
+        print("Cats meows")
+d1=Dog()
+d1.sound()
+c1=Cat()
+c1.sound()
+        
+
     
     
