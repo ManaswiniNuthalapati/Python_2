@@ -98,5 +98,24 @@ c1=Cat()
 c1.sound()
         
 
+class Animal:
+    def sound(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog bark")
+d = Dog()
+d.sound()
     
-    
+'''
+Create class:
+Student
+Attributes:
+name
+marks
+Method:
+grade()
+If marks > 50 → Pass
+Else → Fail
+'''
