@@ -142,3 +142,16 @@ Developer
 Manager
 Override method.
 '''
+class Employee:
+    def work(self):
+        print("Employee works")
+class Developer(Employee):
+    def work(self):
+        print("Developer works")
+class Manager(Employee):
+    def work(self):
+        print("Manager works")
+d1=Developer()
+d1.work()
+m1=Manager()
+m1.work()
