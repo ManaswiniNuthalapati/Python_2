@@ -130,3 +130,15 @@ class Student:
             print("Fail")
 s1=Student("Manu",79)
 s1.grade()
+
+'''
+Question 3 — Employee System
+Parent Class:
+Employee
+Method:
+work()
+Child Class:
+Developer
+Manager
+Override method.
+'''
