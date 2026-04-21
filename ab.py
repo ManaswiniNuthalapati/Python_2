@@ -119,3 +119,14 @@ grade()
 If marks > 50 → Pass
 Else → Fail
 '''
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def grade(self):
+        if self.marks>50:
+            print("Pass")
+        else:
+            print("Fail")
+s1=Student("Manu",79)
+s1.grade()
