@@ -245,3 +245,28 @@ p1.display()
 p2.display()
 p3.display()
 
+'''
+1. Class & Object
+Create a class Student
+Attributes:
+name
+age
+marks
+Method:
+display()
+Create 3 objects and print details.
+'''
+class Student:
+    def __init__(self,name,age,marks):
+        self.name=name
+        self.age=age
+        self.marks=marks
+    def display(self):
+        print("Name:",self.name)
+        print("Age:",self.age)
+        print("Marks:",self.marks)
+s=Student("Manu",19,90)
+s.display()
+
+
+        
