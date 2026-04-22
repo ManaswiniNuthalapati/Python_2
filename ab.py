@@ -266,7 +266,34 @@ class Student:
         print("Age:",self.age)
         print("Marks:",self.marks)
 s=Student("Manu",19,90)
+s1=Student("John",20,83)
+s2=Student("Joe",20,99)
 s.display()
+s1.display()
+s2.display()
 
-
+'''
+2. Constructor
+Create class Employee
+Constructor should accept:
+name
+department
+salary
+Create method:
+show_details()
+Create 2 objects.
+'''
+class Employee:
+    def __init__(self,name,department,salary):
+        self.name=name
+        self.department=department
+        self.salary=salary
+    def show_details(self):
+        print("Name:",self.name)
+        print("Department:",self.department)
+        print("Salary:",self.salary)
+e=Employee("MN","HR",100000)
+e1=Employee("M","Manager",70000)
+e.show_details()
+e1.show_details()
         
