@@ -271,6 +271,27 @@ s2=Student("Joe",20,99)
 s.display()
 s1.display()
 s2.display()
+                #OR
+class Student:
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Marks:", self.marks)
+s=Student()
+s.name="Manu"
+s.age=19
+s.marks=90
+s1=Student()
+s1.name="John"
+s1.age=20
+s1.marks=83
+s2=Student()
+s2.name="Joe"
+s2.age=20
+s2.marks=99
+s.display()
+s1.display()
+s2.display()
 
 '''
 2. Constructor
@@ -296,4 +317,64 @@ e=Employee("MN","HR",100000)
 e1=Employee("M","Manager",70000)
 e.show_details()
 e1.show_details()
+        
+'''
+5. Inheritance (Single Inheritance)
+Create Parent class:
+Person
+Attributes:
+name
+age
+Method:
+display()
+Create Child class:
+Student
+Add:
+marks
+Create object and display details.
+'''
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print("Name",self.name)
+        print("Age",self.age)
+class Student(Person):
+    def __init__(self,name,age,marks):
+        super().__init__(name,age)
+        self.marks=marks
+    def display(self):
+        super().display()
+        print("Marks",self.marks)
+s=Student("Manu",20,99)
+s.display()
+
+'''
+Create:
+Grandparent → Animal
+Parent → Dog
+Child → Puppy
+Methods:
+Animal → eat()
+Dog → bark()
+Puppy → weep()
+Create object and call all methods.
+'''
+class Animal:
+    def eat(self):
+        print("Animal eats")
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+class Puppy(Dog):
+    def weep(self):
+        print("Puppy weeps")
+a=Animal()
+a.eat()
+d=Dog()
+d.bark()
+p=Puppy()
+p.weep()
+
         
