@@ -155,3 +155,38 @@ d1=Developer()
 d1.work()
 m1=Manager()
 m1.work()
+
+'''
+Question 4 — Shape Example (Abstraction)
+Create Abstract Class:
+Shape
+Method:
+area()
+Create child classes:
+Circle
+Rectangle
+'''
+from abc import ABC, abstractmethod
+import math
+class Shape:
+    @abstractmethod
+    def area(self):
+        pass
+class Circle:
+    def __init__(self,radius):
+        self.radius=radius
+    def area(self):
+        return math.pi*self.radius*self.radius
+class Rectangle:
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        return self.length*self.breadth
+c=Circle(5)
+print(c.area())
+r=Rectangle(2,3)
+print(r.area())
+    
+    
+    
