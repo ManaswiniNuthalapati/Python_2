@@ -351,6 +351,7 @@ s=Student("Manu",20,99)
 s.display()
 
 '''
+Multi-Level Inheritance
 Create:
 Grandparent → Animal
 Parent → Dog
@@ -377,4 +378,27 @@ d.bark()
 p=Puppy()
 p.weep()
 
-        
+'''
+7. Polymorphism (Method Overriding)
+Create Parent class:
+Shape
+Method:
+draw()
+Create Child classes:
+Circle
+Rectangle
+Override draw() method.
+'''
+class Shape:
+    def draw(self):
+        print("Drawing a shape")
+class Circle(Shape):
+    def draw(self):
+        print("Drawing a circle")
+class Rectangle(Shape):
+    def draw(self):
+        print("Drawing a Rectangle")
+c=Circle()
+c.draw()
+r=Rectangle()
+r.draw()
