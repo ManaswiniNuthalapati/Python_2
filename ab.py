@@ -132,6 +132,38 @@ s1=Student("Manu",79)
 s1.grade()
 
 '''
+Question 2 — ATM Machine
+Create class:
+ATM
+Methods:
+deposit()
+withdraw()
+check_balance()
+Use encapsulation.
+'''
+class ATM:
+        def __init__(self, balance):
+            self.__balance = balance
+
+        def deposit(self, amount):
+            self.__balance += amount
+            print("Deposited:", amount)
+            
+        def withdraw(self, amount):
+            if amount <= self.__balance:
+                self.__balance -= amount
+                print("Withdrawn:", amount)
+            else:
+                print("Insufficient Balance")
+
+        def check_balance(self):
+            print("Current Balance:", self.__balance)
+atm = ATM(1000)
+atm.deposit(500)
+atm.withdraw(300)
+atm.check_balance()
+
+'''
 Question 3 — Employee System
 Parent Class:
 Employee
@@ -212,3 +244,4 @@ p3=Product("Airpods",15000)
 p1.display()
 p2.display()
 p3.display()
+
