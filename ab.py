@@ -188,5 +188,27 @@ print(c.area())
 r=Rectangle(2,3)
 print(r.area())
     
-    
-    
+'''
+Question 5 — Shopping Cart
+Create class:
+Product
+Attributes:
+name
+price
+Method:
+display()
+Create 3 objects.
+'''
+class Product:
+    def __init__(self,name,price):
+        self.name=name
+        self.price=price
+    def display(self):
+        print("Name",self.name)
+        print("Price",self.price)
+p1=Product("Laptop",70000)
+p2=Product("Mobile",50000)
+p3=Product("Airpods",15000)
+p1.display()
+p2.display()
+p3.display()
