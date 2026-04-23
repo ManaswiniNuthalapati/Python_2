@@ -419,7 +419,7 @@ class Calculator:
         self.b=b
         self.c=c
     def add(self):
-        sum=a+b+c
+        sum=self.a+self.b+self.c
 c=Calculator(10,20,30)
 c.add()
 c1=Calculator(10,20)
