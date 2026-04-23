@@ -437,3 +437,14 @@ c1 = Car("Toyota", 1000000)
 c1.display()
         
 # Create a class Student with name and marks. Print pass/fail.       
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    def result(self):
+        if self.marks > 50:
+            print("Pass")
+        else:
+            print("Fail")
+s1 = Student("Sai", 60)
+s1.result()
