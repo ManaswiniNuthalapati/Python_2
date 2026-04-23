@@ -429,8 +429,8 @@ c1.add()
 # Create a class Car with attributes brand and price. Print details.
 class Car:
     def __init__(self, brand, price):
-        self.brand = brand
-        self.price = price
+        self.brand=brand
+        self.price=price
     def display(self):
         print(self.brand, self.price)
 c1 = Car("Toyota", 1000000)
@@ -439,12 +439,12 @@ c1.display()
 # Create a class Student with name and marks. Print pass/fail.       
 class Student:
     def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks
+        self.name=name
+        self.marks=marks
     def result(self):
-        if self.marks > 50:
+        if self.marks>50:
             print("Pass")
         else:
             print("Fail")
-s1 = Student("Sai", 60)
+s1 = Student("Sai",60)
 s1.result()
