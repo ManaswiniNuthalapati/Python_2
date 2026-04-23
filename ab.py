@@ -402,3 +402,37 @@ c=Circle()
 c.draw()
 r=Rectangle()
 r.draw()
+
+'''
+8. Polymorphism (Operator Polymorphism)
+Create class Calculator
+Create method:
+add()
+It should:
+Add 2 numbers
+Add 3 numbers
+(Hint: Use default arguments)
+class Calculator:
+    def __init__(self,a,b,c=0):
+        self.a=a
+        self.b=b
+        self.c=c
+    def add(self):
+        sum=a+b+c
+c=Calculator(10,20,30)
+c.add()
+c1=Calculator(10,20)
+c1.add()
+        '''
+
+# Create a class Car with attributes brand and price. Print details.
+class Car:
+    def __init__(self, brand, price):
+        self.brand = brand
+        self.price = price
+    def display(self):
+        print(self.brand, self.price)
+c1 = Car("Toyota", 1000000)
+c1.display()
+        
+        
