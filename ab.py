@@ -420,6 +420,7 @@ class Calculator:
         self.c=c
     def add(self):
         sum=self.a+self.b+self.c
+        print(sum)
 c=Calculator(10,20,30)
 c.add()
 c1=Calculator(10,20)
