@@ -436,4 +436,4 @@ class Car:
 c1 = Car("Toyota", 1000000)
 c1.display()
         
-        
+# Create a class Student with name and marks. Print pass/fail.       
