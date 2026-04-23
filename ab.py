@@ -412,6 +412,7 @@ It should:
 Add 2 numbers
 Add 3 numbers
 (Hint: Use default arguments)
+'''
 class Calculator:
     def __init__(self,a,b,c=0):
         self.a=a
@@ -423,7 +424,7 @@ c=Calculator(10,20,30)
 c.add()
 c1=Calculator(10,20)
 c1.add()
-        '''
+    
 
 # Create a class Car with attributes brand and price. Print details.
 class Car:
