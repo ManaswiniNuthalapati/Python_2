@@ -26,6 +26,7 @@ class BankAccount:
             
     def show_balance(self):
         print("Balance:",self.balance)
+        
 acc=BankAccount(1000)
 acc.deposit(500)
 acc.withdraw(300)
