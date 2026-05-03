@@ -31,3 +31,5 @@ acc=BankAccount(1000)
 acc.deposit(500)
 acc.withdraw(300)
 acc.show_balance()
+
+# Create a class Calculator with a method to add two numbers.
