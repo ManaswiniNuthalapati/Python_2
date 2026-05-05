@@ -34,7 +34,7 @@ acc.show_balance()
 
 # Create a class Calculator with a method to add two numbers.
 class Calculator:
-    def add(self, a, b):
-        return a + b
-c = Calculator()
-print(c.add(10, 20))
+    def add(self,a,b):
+        return a+b
+c=Calculator()
+print(c.add(10,20))
