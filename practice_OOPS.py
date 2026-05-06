@@ -38,3 +38,5 @@ class Calculator:
         return a+b
 c=Calculator()
 print(c.add(10,20))
+
+# Create a class Car with brand and model using constructor.
