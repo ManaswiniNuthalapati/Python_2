@@ -41,9 +41,9 @@ print(c.add(10,20))
 
 # Create a class Car with brand and model using constructor.
 class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-c1 = Car("Toyota", "Innova")
+    def __init__(self,brand,model):
+        self.brand=brand
+        self.model=model
+c1=Car("Toyota","Innova")
 print(c1.brand)
 print(c1.model)
