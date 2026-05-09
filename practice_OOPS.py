@@ -47,3 +47,5 @@ class Car:
 c1=Car("Toyota","Innova")
 print(c1.brand)
 print(c1.model)
+
+# Create a parent class Animal and child class Dog.
