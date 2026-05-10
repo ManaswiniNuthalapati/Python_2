@@ -49,3 +49,12 @@ print(c1.brand)
 print(c1.model)
 
 # Create a parent class Animal and child class Dog.
+class Animal:
+    def sound(self):
+        print("Animal makes sound")
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+d = Dog()
+d.sound()
+d.bark()
