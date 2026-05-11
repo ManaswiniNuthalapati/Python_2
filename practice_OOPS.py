@@ -58,3 +58,5 @@ class Dog(Animal):
 d = Dog()
 d.sound()
 d.bark()
+
+# Different classes with same method name.
