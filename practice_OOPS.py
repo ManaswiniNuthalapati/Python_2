@@ -60,3 +60,13 @@ d.sound()
 d.bark()
 
 # Different classes with same method name.
+class Cat:
+    def sound(self):
+        print("Meow")
+class Cow:
+    def sound(self):
+        print("Moo")
+c1 = Cat()
+c2 = Cow()
+c1.sound()
+c2.sound()
