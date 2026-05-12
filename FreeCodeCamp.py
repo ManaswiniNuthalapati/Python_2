@@ -14,4 +14,5 @@ Requirements:
     instrument_1 with values "Oboe" and "woodwind"
     instrument_2 with values "Trumpet" and "brass"
 5. Call the play() method using instrument_1.
-6. Print the result of the get_fact() method using instrument_1.'''
+6. Print the result of the get_fact() method using instrument_1.
+'''
