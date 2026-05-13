@@ -73,6 +73,15 @@ else:
   print("special characters")
 
 # Electricity bill calculation
+'''
+Write a Python program to calculate the electricity bill based on the number of units consumed.
+The electricity charges are calculated according to the following slab rates:
+Units Consumed	            Rate per Unit
+First 100 units	            ₹1.5 per unit
+Next 100 units (101–200)	₹2.5 per unit
+Next 100 units (201–300)	₹4 per unit
+Above 300 units	            ₹6 per unit
+'''
 units=int(input())
 bill=0
 if units<=100:
