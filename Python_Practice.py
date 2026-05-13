@@ -1,3 +1,5 @@
+## CONDITIONAL STATEMENTS
+
 # Even or odd
 n=10
 if n%2==0:
@@ -136,3 +138,107 @@ elif Selling_price<Cost_Price:
   print("Loss: ",Selling_price-Cost_Price)
 else:
   print("Neutral")
+  
+# Write a program to check whether three sides can form a valid triangle.
+a=3
+b=4
+c=5
+if a+b>c and b+c>a and a+c>b:
+  print("Valid triangle")
+else:
+  print("Not Valid")
+  
+# Write a program to determine the type of triangle based on side lengths.
+a=4
+b=5
+c=6
+if a==b==c:
+  print("Equilateral")
+elif a==b!=c or a==c!=b:
+  print("Isosceles")
+else:
+  print("Scalene")
+  
+# Write a program to simulate ATM withdrawal functionality.
+balance=5000
+amount=2000
+if amount<balance and amount%100==0:
+  print("Transaction Successful")
+  balance-=amount
+  print(balance)
+else:
+  print("Insufficient balance")
+
+# Write a Python program to perform arithmetic operations using if-elif conditions.
+n1=10
+n2=20
+choice=int(input())
+if choice==1:
+  print(n1+n2)
+elif choice==2:
+  print(n1-n2)
+elif choice==3:
+  print(n1*n2)
+elif choice==4:
+    print(n1/n2)
+else:
+  print("Invalid")
+  
+
+## LOOPS
+# Print 1 to N
+n=10
+for i in range(1,n):
+  print(i,end=" ")
+  
+# Print N to 1
+n=10
+for i in range(n,0,-1):
+  print(i,end=" ")
+  
+# Sum of first N numbers
+n=5
+total=0
+for i in range(n):
+  total+=i
+print(total)
+
+# Sum of even numbers
+n=10
+even_total=0
+odd_total=0
+for i in range(n):
+  if i%2==0:
+    even_total+=i
+  else:
+    odd_total+=i
+print(even_total)
+print(odd_total)
+
+# Multiplication table
+n=5
+table=0
+for i in range(1,11):
+  table=n*i
+  print(table)
+  
+# Reverse a number
+n=12
+rev=" "
+for i in str(n):
+  rev=i+rev
+print(int(rev))
+
+# Count digits
+n=123456789
+count=0
+for i in str(n):
+  count+=1
+print(count)
+
+# Sum digits
+n=12345
+total=0
+for i in str(n):
+  total+=int(i)
+print(total)
