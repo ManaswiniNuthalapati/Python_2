@@ -93,3 +93,46 @@ elif units<=300:
 else:
     bill=(100+1.5)+(100*2.5)+(100*4)+((units-300)*6)
 print(bill)
+
+'''
+Write a program to calculate the grade of a student based on marks entered by the user.
+'''
+n=70
+if n>=90:
+  print("A")
+elif n>=80 and n<=89:
+  print("B")
+elif n>=70 and n<=79:
+  print("C")
+elif n>=60 and n<=69:
+  print("D")
+else:
+  print("Fail")
+  
+  
+'''Calculator Using Operators'''
+num1=10
+num2=5
+operator=input()
+match operator:
+  case "+":
+    print(num1+num2)
+  case "-":
+    print(num1-num2)
+  case "*":
+    print(num1*num2)
+  case "/":
+    if num2!=0:
+      print(num1/num2)
+  case "_":
+    print("Invalid")
+  
+# Write a program to determine whether there is profit or loss based on cost price and selling price.
+Cost_Price=500
+Selling_price=650
+if Selling_price>Cost_Price:
+  print("Profit: ",Selling_price-Cost_Price)
+elif Selling_price<Cost_Price:
+  print("Loss: ",Selling_price-Cost_Price)
+else:
+  print("Neutral")
