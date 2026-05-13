@@ -38,3 +38,49 @@ elif b<c and b<a:
   print(b, "Smallest Number")
 else:
   print(c, "Smallest Number")
+
+# Divisible by 5 and 11
+n=10
+if n%5!=0 and n%11==0:
+  print(n, "Not Divisible by 5 but Divisible by 11")
+elif  n%5==0 and n%11!=0:
+  print(n, "Divisible by 5 but not Divisible by 11")
+else:
+  print(n, "Divisible by 5 and 11")
+  
+# Leap year
+n=2028
+if (n%400==0) or (n%4==0 and n%100!=0):
+  print("Leap Year")
+else:
+  print("Not Leap Year")
+  
+# Vowel or consonant
+n="a"
+vowels="aeiouAEIOU"
+if n in vowels:
+  print("vowel")
+else:
+  print("consonant")
+
+# Alphabet, digit, or special character
+n="@#"
+if n.isalpha():
+  print("Alphabet")
+elif n.isdigit():
+  print("Numbers")
+else:
+  print("special characters")
+
+# Electricity bill calculation
+units = int(input())
+bill = 0
+if units <= 100:
+    bill = units * 1.5
+elif units <= 200:
+    bill = (100 * 1.5) + ((units - 100) * 2.5)
+elif units <= 300:
+    bill = (100 * 1.5) + (100 * 2.5) + ((units - 200) * 4)
+else:
+    bill = (100 * 1.5) + (100 * 2.5) + (100 * 4) + ((units - 300) * 6)
+print(bill)
