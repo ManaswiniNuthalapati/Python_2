@@ -273,4 +273,69 @@ if n_1==rev:
 else:
   print("Not Palindrome")
 
+# Armstrong number
+n=153
+temp=n
+rev=0
+while n>0:
+  digit=n%10
+  rev=rev+digit**3
+  n=n//10
+if rev==temp:
+  print("Armstrong number")
+else:
+  print("Not Armstrong Number")
+  
+# Factorial
+n=5
+fact=1
+for i in range(1,n+1):
+  fact*=i
+print(fact)
 
+# Prime Number
+n=14
+for i in range(1,n):
+  if n%i==0:
+    is_prime="Prime"
+  else:
+    is_prime="Not Prime"
+print(is_prime)
+
+# Fibonacci series
+n=20
+a,b=0,1
+print(a,end=" ")
+for i in range(2,n+1):
+  a,b=b,a+b
+  print(a,end=" ")
+  
+# HCF
+n1=12
+n2=18
+for i in range(n1,0,-1):
+  if n1%i==0 and n2%i==0:
+    print(i)
+    
+# Perfect Number
+n=28
+total=0
+for i in range(1,n):
+  if n%i==0:
+    total+=i
+if n==total:
+  print("Perfect Number")
+else:
+  print("Not Perfect Number")
+  
+# LCM
+n1=4
+n2=6
+greater=n1
+while True:
+  if greater%n1==0 and greater%n2==0:
+    print(greater)
+    break
+  greater+=1
+    
+    
