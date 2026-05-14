@@ -402,3 +402,55 @@ for i in range(1,n+1):
   for j in range(1,i+1):
     print(i,end=" ")
   print() 
+
+# Reverse string
+n="Hello"
+print(n[::-1])
+
+n="Hello"
+rev=" "
+for i in n:
+  rev=i+rev
+print(rev)
+
+# Palindrome string
+n="Hello"
+rev=n[::-1]
+if n==rev:
+  print("Palindrome")
+else:
+  print("Not Palindrome")
+  
+# Count vowels and consonants
+n="Hello"
+v_count=0
+c_count=0
+for i in n:
+  if i in "aeiouAEIOU":
+    v_count+=1
+  else:
+    c_count+=1
+print(v_count)
+print(c_count)
+
+# Count words
+n="I am Practicing Coding"
+count=1
+for i in n:
+  if i==" ":
+    count+=1
+print(count)
+  
+# Convert lowercase to uppercase
+n="HELLO"
+print(n.lower())
+
+# Remove Spaces
+n="I am Practicing Coding"
+n_1=""
+for i in n:
+  if i!=" ":
+    n_1+=i
+print(n_1)
+
+
