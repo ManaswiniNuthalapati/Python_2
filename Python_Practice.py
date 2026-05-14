@@ -242,3 +242,35 @@ total=0
 for i in str(n):
   total+=int(i)
 print(total)
+
+# Palindrome number
+n=121
+temp=n
+rev=0
+while n>0:
+  digit=n%10
+  rev=rev*10+digit
+  n=n//10
+if rev==temp:
+  print("Palindrome")
+else:
+  print("Not Palindrome")
+  
+n=121
+rev=""
+for i in str(n):
+  rev=i+rev
+if str(n)==rev:
+  print("Palindrome")
+else:
+  print("Not Palindrome")
+  
+n=121
+n_1=str(n)
+rev=n_1[::-1]
+if n_1==rev:
+  print("Palindrome")
+else:
+  print("Not Palindrome")
+
+
