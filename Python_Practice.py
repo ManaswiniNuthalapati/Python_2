@@ -453,4 +453,16 @@ for i in n:
     n_1+=i
 print(n_1)
 
-
+# Compress String
+n="aaabbc"
+freq={}
+for i in n:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+print(freq)
+res=""
+for key,value in freq.items():
+  res+=key+str(value)
+print(res)
