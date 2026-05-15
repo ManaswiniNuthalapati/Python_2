@@ -809,10 +809,10 @@ def palindrome(a):
         print("Not Palindrome")
 palindrome(121)
 
-'''# Write a function to reverse a string
+# Write a function to reverse a string
 def rev_str(a):
     rev=""
     for i in a:
         rev=i+rev
     return rev
-rev_str("Hello")'''
+rev_str("Hello")
