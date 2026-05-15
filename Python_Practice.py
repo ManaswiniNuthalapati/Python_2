@@ -767,3 +767,52 @@ print(A==B)
 A={1,2,3,4}
 B={3,4,5,6}
 print(A.symmetric_difference(B))
+
+# Write a function to add two numbers
+def add_num(a,b):
+  return a+b
+add_num(2,3)
+
+# Write a function to find maximum of two numbers
+def max_two_num(a,b):
+  if a>b:
+    m=a
+  else:
+    m=b
+  return m
+max_two_num(2,3)
+
+# Write a function to check even or odd
+def even_odd(a):
+    if a%2==0:
+        return "Even"
+    else:
+        return "Odd"
+even_odd(10)
+    
+# Write a function to find factorial
+def fact(a):
+    factorial=1
+    for i in range(1,a+1):
+        factorial*=i
+    return factorial
+fact(5)
+
+# Write a function to check palindrome number
+def palindrome(a):
+    rev=""
+    for i in str(a):
+        rev=i+rev
+    if a==int(rev):
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
+palindrome(121)
+
+# Write a function to reverse a string
+def rev_str(a):
+    rev=""
+    for i in a:
+        rev=i+rev
+    return rev
+rev_str("Hello")
