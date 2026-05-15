@@ -815,3 +815,30 @@ def rev_str(a):
         rev=i+rev
     return rev
 rev_str("Hello")
+
+# Write a function to count vowels in a string
+def count_vowel(a):
+    count=0
+    for i in a:
+        if i in "aeiouAEIOU":
+            count+=1
+    return count
+count_vowel("Hello")
+
+# Write a function to find sum of list elements
+def list_ele(a):
+    sum=0
+    for i in range(len(a)):
+        sum+=a[i]
+    return sum
+print(list_ele([10,20,30]))
+
+# Write a function to check prime number
+def is_prime(n):
+    if n<=1:
+        return "False"
+    for i in range(2,n):
+        if n%i==0:
+            return "False"
+    return "True"
+is_prime(7)
