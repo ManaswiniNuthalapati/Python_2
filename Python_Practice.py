@@ -651,15 +651,14 @@ if n1==n2:
 else:
   print("Not")
   
-
 # Create tuple and print elements
 n=(1,2,3,4)
 for i in n:
   print(i)
+  
 # Find length of tuple
 n=(1,2,3,4)
 print(len(n))
-
 n=(1,2,3,3,4)
 count=0
 for i in n:
