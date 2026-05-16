@@ -702,3 +702,21 @@ for i in n_1:
     smallest=i
 print(largest)
 print(smallest)
+
+
+# Concatenate two tuples
+n1=(1,2,3)
+n2=(9,8,7)
+print(n1+n2)
+
+# Slice a tuple
+n=(10,20,30,40,50)
+print(n[1:4])
+
+'''Check whether element exists in tuple
+'''
+n=(10,20,30,40)
+if 50 in n:
+  print(True)
+else:
+  print(False)
