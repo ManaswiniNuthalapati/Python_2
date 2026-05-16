@@ -616,3 +616,37 @@ n_1=[]
 for i in range(len(n)-1,-1,-1):
   n_1.append(n[i])
 print(n_1)
+
+# Remove duplicates from list
+n=[1, 2, 2, 3, 4, 4, 5]
+n_1=[]
+for i in n:
+  if i not in n_1:
+    n_1.append(i)
+print(n_1)
+
+# Merge two lists
+l1=[1, 2, 3]
+l2=[4, 5, 6]
+print(l1+l2)
+
+# Find element frequency
+n=[1, 2, 2, 3, 1, 1]
+freq={}
+for i in n:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+print(freq)
+
+# Check whether list is palindrome
+n1=[1, 4, 3, 2, 1]
+n2=[]
+for i in range(len(n1)-1,-1,-1):
+  n2.append(n1[i])
+print(n2)
+if n1==n2:
+  print("palindrome")
+else:
+  print("Not")
