@@ -466,3 +466,105 @@ res=""
 for key,value in freq.items():
   res+=key+str(value)
 print(res)
+
+# Find length of string without using len()
+n="Hello"
+count=0
+for i in n:
+  count+=1
+print(count)
+
+# Check whether two strings are anagrams
+n1="silent"
+n2="listen"
+if sorted(n1)==sorted(n2):
+  print("Anagram")
+else:
+  print("Not Anagram")
+  
+n1="silent"
+n2="listen"
+f_n1={}
+f_n2={}
+for i in n1:
+  if i in f_n1:
+    f_n1[i]+=1
+  else:
+    f_n1[i]=1
+for i in n2:
+  if i in f_n2:
+    f_n2[i]+=1
+  else:
+    f_n2[i]=1
+print(f_n1)
+print(f_n2)
+if f_n1==f_n2:
+  print("Anagram")
+else:
+  print("Not Anagram")
+  
+# Find the first non-repeating character
+n="alphabet"
+freq={}
+for i in n:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+for key,value in freq.items():
+  if value>1:
+    print(key)
+    break
+  
+# Find largest word in a sentence
+n="I love Programming"
+n_1=n.split()
+largest=n_1[0]
+for i in n_1:
+  if len(i)>len(largest):
+    largest=i
+print(largest)
+
+# Remove duplicate characters in a string
+n="hellooo"
+dup=""
+for i in n:
+  if i not in dup:
+    dup+=i
+print(dup)
+    
+# Find duplicate characters in a string
+n="hellooo"
+freq={}
+for i in n:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+for key,value in freq.items():
+  if value>1:
+    print(key,end="")
+
+# Count occurrence of each word
+n="i have i have"
+n_1=n.split()
+freq={}
+for i in n_1:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+print(freq)
+
+# Check whether one string is rotation of another
+s1="ABCD"
+s2="CDAB"
+if len(s1)==len(s2) and s1 in (s1+s2):
+  print("Rotation")
+else:
+  print("Not")
+  
+# Print characters with their ASCII values'''
+n="hello"
+for i in n:
+  print(i,ord(i))
