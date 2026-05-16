@@ -650,3 +650,55 @@ if n1==n2:
   print("palindrome")
 else:
   print("Not")
+  
+
+# Create tuple and print elements
+n=(1,2,3,4)
+for i in n:
+  print(i)
+# Find length of tuple
+n=(1,2,3,4)
+print(len(n))
+
+n=(1,2,3,3,4)
+count=0
+for i in n:
+  count+=1
+print(count)
+
+# Count occurrence of an element
+n=(1,1,2,2,3,3,4)
+n_1=list(n)
+freq={}
+for i in n_1:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+print(freq)
+
+# Find index of element
+n=(10,20,300,40,50)
+n_1=list(n)
+for i in range(len(n_1)):
+  print(i,n_1[i])
+  
+# Convert tuple to list and vice versa
+n=(10,20,300,40,50)
+n_1=list(n)
+print(n_1)
+n_2=tuple(n_1)
+print(n_2)
+
+# Find maximum and minimum element
+n=(1, 10, 20, 5, 8, 50)
+n_1=list(n)
+largest=n_1[0]
+smallest=n_1[0]
+for i in n_1:
+  if i>largest:
+    largest=i
+  if i<smallest:
+    smallest=i
+print(largest)
+print(smallest)
