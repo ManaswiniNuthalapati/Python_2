@@ -568,3 +568,51 @@ else:
 n="hello"
 for i in n:
   print(i,ord(i))
+  
+
+# Find largest and smallest element
+n=[1, 10, 20, 5, 8, 50]
+largest=n[0]
+smallest=n[0]
+for i in n:
+  if i>largest:
+    largest=i
+  if i<smallest:
+    smallest=i
+print(largest)
+print(smallest)
+
+# Find sum of all elements
+n=[1, 10, 20, 5, 8, 50]
+total=0
+for i in n:
+  total+=i
+print(total)
+
+# Find average of list
+n=[1, 10, 20, 5, 8, 50]
+total=0
+l=len(n)
+for i in n:
+  total+=i
+print(total)
+print(total/l)
+
+# Count even and odd numbers
+n=[1, 10, 20, 5, 8, 50]
+e_count=0
+o_count=0
+for i in n:
+  if i%2==0:
+    e_count+=1
+  else:
+    o_count+=1
+print(e_count)
+print(o_count)
+
+# Reverse a list
+n=[1, 10, 20, 5, 8, 50]
+n_1=[]
+for i in range(len(n)-1,-1,-1):
+  n_1.append(n[i])
+print(n_1)
