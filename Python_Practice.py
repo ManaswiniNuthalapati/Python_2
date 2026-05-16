@@ -720,3 +720,50 @@ if 50 in n:
   print(True)
 else:
   print(False)
+  
+# Create a set and print elements
+n={3,4,2,1,5}
+for i in n:
+  print(i)
+  
+# Add and remove elements
+n={4,5,2,1,4,2}
+n.add(9)
+print(n)
+n.remove(9)
+print(n)
+
+#Find union of two sets
+n1={4,7,3,1}
+n2={6,0,3,2}
+print(n1.union(n2))
+
+#Find intersection of two sets
+n1={4,7,3,1}
+n2={6,0,3,2}
+print(n1.intersection(n2))
+
+#Find difference between sets
+n1={4,7,3,1}
+n2={6,0,3,2}
+print(n1.difference(n2))
+
+#Check subset and superset
+n1={4,7,3,1}
+n2={6,0,3,2}
+print(n1.issubset(n2))
+print(n1.issuperset(n2))
+
+#Remove duplicates from list using set
+n=[3,5,1,4,1,3]
+print(set(n))
+
+#Check whether two sets are equal
+A={1,2,3}
+B={3,2,1}
+print(A==B)
+
+# Find symmetric difference
+A={1,2,3,4}
+B={3,4,5,6}
+print(A.symmetric_difference(B))
