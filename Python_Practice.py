@@ -844,3 +844,17 @@ def is_prime(n):
 is_prime(7)
 
 # Valid Palindrome
+nums=[1,2,3,1]
+freq={}
+for i in nums:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+res=False
+for key,value in freq.items():
+    if value>=2:
+        res=True
+        break
+print(res)
