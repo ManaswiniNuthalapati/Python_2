@@ -842,3 +842,5 @@ def is_prime(n):
             return "False"
     return "True"
 is_prime(7)
+
+# Valid Palindrome
