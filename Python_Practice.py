@@ -860,7 +860,7 @@ for key,value in freq.items():
 print(res)
 
 # Reverse a String
-s = "python"
+s="python"
 print(s[::-1])
 
 # Find Largest Number in List
