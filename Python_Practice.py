@@ -860,9 +860,9 @@ for key,value in freq.items():
 print(res)
 
 # Find Largest Number in List
-nums = [4, 7, 2, 9, 1]
-largest = nums[0]
+nums=[4,7,2,9,1]
+largest=nums[0]
 for i in nums:
-    if i > largest:
-        largest = i
+    if i>largest:
+        largest=i
 print(largest)
