@@ -94,3 +94,5 @@ def staircase(n):
         for k in range(i):
             print("#",end="")
         print()
+        
+# Compare the Triplets
