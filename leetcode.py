@@ -78,3 +78,10 @@ for i in range(1,n+1):
   else:
     res.append(str(i))
 print(res)
+
+# Simple Array Sum
+def simpleArraySum(ar):
+    total=0
+    for i in ar:
+        total+=i
+    return total
