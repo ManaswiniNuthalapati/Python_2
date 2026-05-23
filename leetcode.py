@@ -34,3 +34,15 @@ while n>=10:
     n=n//10
   n=total
 print(n)
+
+# Subtract the Product and Sum of Digits of an Integer
+n=234
+product=0
+add=0
+while n>0:
+  digit=n%10
+  product*=digit
+  add+=digit
+  n=n//10
+res=product-add
+print(res)
