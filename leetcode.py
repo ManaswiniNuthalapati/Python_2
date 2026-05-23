@@ -52,3 +52,15 @@ n=6699
 n=str(n)
 n=n.replace('6','9',1)
 print(int(n))
+
+# Power of Two
+n=16
+if n<=0:
+  print(False)
+else:
+  while n>1:
+    if n%2!=0:
+      print(False)
+    n=n//2
+  else:
+    print(True)
