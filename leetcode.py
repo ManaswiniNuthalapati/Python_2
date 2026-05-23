@@ -46,3 +46,9 @@ while n>0:
   n=n//10
 res=product-add
 print(res)
+
+# Max 69 Number
+n=6699
+n=str(n)
+n=n.replace('6','9',1)
+print(int(n))
