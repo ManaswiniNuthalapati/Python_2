@@ -120,3 +120,17 @@ def aVeryBigSum(ar):
     return res
 
 # Plus Minus
+def plusMinus(arr):
+    pos=0
+    neg=0
+    zer=0
+    for i in arr:
+        if i>0:
+            pos+=1
+        elif i<0:
+            neg+=1
+        else:
+            zer+=1
+    print(f"{pos/n:.5f}")
+    print(f"{neg/n:.5f}")
+    print(f"{zer/n:.5f}")
