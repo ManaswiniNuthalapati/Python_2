@@ -136,3 +136,16 @@ def plusMinus(arr):
     print(f"{zer/n:.5f}")
 
 # Migratory Birds
+def migratoryBirds(arr):
+    freq={}
+    for i in arr:
+        if i in freq:
+            freq[i]+=1
+        else:
+            freq[i]=1
+    max_count=max(freq.values())
+    ans=[]
+    for key in freq:
+        if freq[key]==max_count:
+            ans.append(key)
+    return min(ans)
