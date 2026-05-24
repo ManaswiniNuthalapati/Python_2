@@ -134,3 +134,5 @@ def plusMinus(arr):
     print(f"{pos/n:.5f}")
     print(f"{neg/n:.5f}")
     print(f"{zer/n:.5f}")
+
+# Migratory Birds
