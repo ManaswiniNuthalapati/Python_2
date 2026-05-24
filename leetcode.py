@@ -113,3 +113,8 @@ def compareTriplets(a, b):
     return res
   
 # A Very Big Sum
+def aVeryBigSum(ar):
+    res=0
+    for i in ar:
+        res+=i
+    return res
