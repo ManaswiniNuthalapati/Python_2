@@ -162,5 +162,102 @@ class Solution:
             i+=1
         return sqr
 
+# Ugly Number
+class Solution:
+    def isUgly(self, n: int) -> bool:
+        if n<=0:
+            return False
+        while n%2==0:
+            n=n//2
+        while n%3==0:
+            n=n//3
+        while n%5==0:
+            n=n//5
+        return n==1
+    
+# Climbing Stairs
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n<=2:
+            return n
+        way_2=1
+        way_1=2
+        for i in range(3,n+1):
+            curr=way_1+way_2
+            way_2=way_1
+            way_1=curr
+        return way_1
+    
+# Count odd numbers in interval range
+class Solution:
+    def countOdds(self, low: int, high: int) -> int:
+        return (high+1)//2-low//2
+        
+# Number of steps to reduce a number to zero
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        steps=0
+        while num>0:
+            if num%2==0:
+                num=num//2
+            else:
+                num=num-1
+            steps+=1
+        return steps
+        
+# Find numbers with even number of digits
+class Solution:
+    def findNumbers(self, nums: list[int]) -> int:
+        count = 0
+        for n in nums:
+            if len(str(n)) % 2 == 0:
+                count += 1
+        return count
+    
+# Valid Anagram
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        a=s.lower()
+        b=t.lower()
+        if len(a)!=len(b):
+            return False
+        else:
+            for ch in a:
+                if a.count(ch)!=b.count(ch):
+                    return False
+                    break
+            else:
+                return True
+        
+# Reverse String
+class Solution:
+    def reverseString(self, s: list[str]) -> None:
+        left=0
+        right=len(s)-1
+        while left<right:
+            s[left],s[right]=s[right],s[left]
+            left+=1
+            right-=1
+
+# Valid palindrome
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        rev=""
+        for c in s:
+            if c.isalnum():        
+                rev+=c.lower()
+        if rev == rev[::-1]:
+            return True
+        else:
+            return False
+
+# Two Sum
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return [i,j]
+        
 
         
