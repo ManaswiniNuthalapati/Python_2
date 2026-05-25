@@ -149,3 +149,18 @@ def migratoryBirds(arr):
         if freq[key]==max_count:
             ans.append(key)
     return min(ans)
+
+# Valid Perfect Square
+class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
+        i=0
+        sqr=False
+        while i*i<=num:
+            if i*i==num:
+                sqr=True
+                break
+            i+=1
+        return sqr
+
+
+        
