@@ -274,3 +274,5 @@ def staircase(n):
         for k in range(i):
             print("#",end="")
         print()
+
+# Beautiful days at the movies
