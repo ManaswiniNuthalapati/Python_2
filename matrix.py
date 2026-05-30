@@ -22,7 +22,7 @@ print(total)
 A=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 B=[[2, 0, 3], [6, 9, 1], [5, 2, 8]]
 o=[]
-for i in range(len(A)):
+for i in range(len(A)): 
   res=[]
   for j in range(len(A[0])):
     res.append(A[i][j]+B[i][j])
@@ -65,3 +65,25 @@ for i in range(n):
 if n%2==1:
   total-=A[n//2][n//2]
 print(total)
+
+# Reshape the matrix
+mat = [[1,2],[3,4]]
+r=1
+c=4
+if len(mat)*len(mat[0])!=r*c:
+  print(mat)
+  
+else:
+  new=[]
+  for li in mat:
+    for i in li:
+      new.append(i)
+  o=[]
+  idx=0
+  for i in range(r):
+    row=[]
+    for j in range(c):
+      row.append(new[idx])
+      idx+=1
+    o.append(row)
+  print(o)
