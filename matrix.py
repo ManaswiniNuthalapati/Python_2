@@ -1,3 +1,15 @@
+# Matrix Creation
+rows=3
+cols=3
+mat=[]
+for i in range(rows):
+  row=[]
+  for j in range(cols):
+    num=int(input())
+    row.append(num)
+  mat.append(row)
+print(mat)
+
 # Sum of two matrix
 A=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 B=[[2, 0, 3], [6, 9, 1], [5, 2, 8]]
