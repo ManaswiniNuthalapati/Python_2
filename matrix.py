@@ -55,3 +55,13 @@ for i in range(n):
     dia.append(A[i][n-1-i])
 print(dia)
 
+# Diagonal Sum
+A=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+total=0
+n=len(A)
+for i in range(n):
+    total+=A[i][i]
+    total+=A[i][n-1-i]
+if n%2==1:
+  total-=A[n//2][n//2]
+print(total)
