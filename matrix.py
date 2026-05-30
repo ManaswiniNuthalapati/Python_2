@@ -40,4 +40,10 @@ for i in range(len(A)):
   o.append(res)
 print(o)
     
+# Print Primary Diagonal
+A=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+dia=[]
+for i in range(len(A)):
+    dia.append(A[i][i])
+print(dia)
 
