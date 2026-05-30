@@ -47,3 +47,11 @@ for i in range(len(A)):
     dia.append(A[i][i])
 print(dia)
 
+# Print Secondary diagonal
+A=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+dia=[]
+n=len(A)
+for i in range(n):
+    dia.append(A[i][n-1-i])
+print(dia)
+
