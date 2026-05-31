@@ -284,3 +284,5 @@ def beautifulDays(i, j, k):
         if abs((num-rev)%k)==0:
             count+=1
     return count
+
+# Repeat Strings
