@@ -297,3 +297,5 @@ for i in total:
     if i=="a":
         count+=1
 print(count)
+
+# The weakest rows in a matrix
