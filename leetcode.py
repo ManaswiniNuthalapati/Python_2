@@ -286,3 +286,14 @@ def beautifulDays(i, j, k):
     return count
 
 # Repeat Strings
+s="aba"
+n=10
+res=""
+while len(res)<n:
+    res+=s
+total=res[:n]
+count=0
+for i in total:
+    if i=="a":
+        count+=1
+print(count)
