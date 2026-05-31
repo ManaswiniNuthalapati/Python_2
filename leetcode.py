@@ -299,3 +299,24 @@ for i in total:
 print(count)
 
 # The weakest rows in a matrix
+mat = [[1,1,0,0,0],
+ [1,1,1,1,0],
+ [1,0,0,0,0],
+ [1,1,0,0,0],
+ [1,1,1,1,1]] 
+k = 3
+row=[]
+idx=0
+for li in mat:
+    count=0
+    for i in li:
+        if i==1:
+            count+=1
+    row.append([count,idx])
+    idx+=1
+res=sorted(row)
+print(res)
+total=[]
+for i in res:
+    total.append(i[1])
+print(total[:k])
