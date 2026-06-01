@@ -320,3 +320,4 @@ total=[]
 for i in res:
     total.append(i[1])
 print(total[:k])
+
