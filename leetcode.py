@@ -322,3 +322,19 @@ for i in res:
 print(total[:k])
 
 # Toggle light bulbs
+class Solution:
+    def toggleLightBulbs(self, bulbs: list[int]) -> list[int]:
+        freq={}
+        for i in bulbs:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+                print(freq)
+        res=[]
+        for key,val in freq.items():
+            if val%2!=0:
+                res.append(key)
+        return sorted(res)
+
+        
