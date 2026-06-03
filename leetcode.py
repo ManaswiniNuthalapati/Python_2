@@ -339,7 +339,7 @@ class Solution:
 
 # Single Number
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def singleNumber(self, nums):
         freq={}
         for i in nums:
             if i in freq:
