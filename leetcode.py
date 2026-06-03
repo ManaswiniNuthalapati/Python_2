@@ -350,4 +350,5 @@ class Solution:
             if value<2:
                 return key
 
-        
+# Happy Number
+    
