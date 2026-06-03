@@ -351,4 +351,16 @@ class Solution:
                 return key
 
 # Happy Number
-    
+n=19
+while n>=10:
+  total=0
+  while n>10:
+    digit=n%10
+    total+=digit**2
+    n=n//10
+  n=total
+if total==1:
+  print(True)
+else:
+  print(False)
+           
