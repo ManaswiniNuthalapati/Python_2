@@ -374,3 +374,10 @@ def HappyNumber(self,n):
             n=n//10
         n=total
     return n==1
+
+# Richest Customer Wealth
+accounts = [[1,2,3],[3,2,1]]
+res=[]
+for i in accounts:
+    res.append(sum(i))
+print(max(res))
