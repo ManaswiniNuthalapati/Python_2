@@ -393,3 +393,26 @@ for i in sentences:
       res.append(count)
 print(res)
 print(max(res))
+
+# Guess Number Higher or Lower
+def guess(mid,pick):
+    if mid<pick:
+       print(1)
+    elif mid>pick:
+       print(-1)
+    else:
+       print(0)
+class Solution:
+    def guessNumber(self, n: int) -> int:
+        low=0
+        high=n
+        while low<=high:
+            mid=(low+high)//2
+            if guess(mid)==0:
+                return mid
+                break
+            elif guess(mid)==1:
+                low=mid+1
+            else:
+                high=mid-1
+        
