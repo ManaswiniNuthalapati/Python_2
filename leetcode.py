@@ -381,3 +381,15 @@ res=[]
 for i in accounts:
     res.append(sum(i))
 print(max(res))
+
+# Max No of words found in a sentence
+sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+res=[]
+for i in sentences:
+  count=1
+  for word in i:
+    if word==" ":
+      count+=1
+      res.append(count)
+print(res)
+print(max(res))
