@@ -416,3 +416,14 @@ class Solution:
             else:
                 high=mid-1
         
+# Find First and Last Position of a Element in a sorted array
+nums = [5,7,7,8,8,10]
+target = 8
+res=[]
+for i in range(len(nums)):
+    if nums[i]==target:
+        res.append(i)
+if len(res)==0:
+    print([-1,-1])
+else:
+    print(res[0],res[-1])
